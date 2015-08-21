@@ -1,0 +1,46 @@
+@import "evil-front"
+
+$color: #0080e0
+
+.slide.shout
+  background: white
+  color: black
+
+  h2
+    color: black
+    font-family: 'Open Sans', sans-serif
+    font-size: 120px
+    line-height: 1.4
+    text-shadow: none
+    text-align: center
+    width: 100%
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+
+
+.slide.is-title
+  &::after
+    visibility: hidden
+    .list &
+      visibility: visible
+  h2
+    font-size: 32px
+    strong
+      display: block
+      font-weight: normal
+      font-size: 250%
+      line-height: 1.35
+      position: relative
+      left: -7px
+  img
+    position: absolute
+    width: 90%
+    top: 81px
+    left: 5%
+    right: 5%
+  em
+    font-family: "Open Sans Light"
+    font-style: normal
+    position: absolute
+    bottom: 90px
